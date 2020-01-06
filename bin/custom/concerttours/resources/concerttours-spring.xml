@@ -17,7 +17,8 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context-3.1.xsd"
     >
-    
+    <bean id="concertDaysUntilAttributeHandler" class="concerttours.attributehandlers.ConcertDaysUntilAttributeHandler"/>
+	
 	<context:component-scan base-package="concerttours"/>
 	<alias name = "defaultBandFacade" alias = "bandFacade" />
 	<bean id = "defaultBandFacade" class ="concerttours.facades.impl.DefaultBandFacade" >
